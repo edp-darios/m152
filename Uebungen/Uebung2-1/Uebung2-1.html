@@ -1,0 +1,81 @@
+<html lang="de">
+    <head>
+        <title>Übung 2.1</title>
+    </head>
+
+    <body>
+
+        <h1>Dieses Tag ist ein: h1</h1>
+
+        <p class="lead">p-Tag mit Klasse 'lead'</p>
+
+        <p class="text">p-Tag mit Klasse 'text'</p>
+
+        <div>
+            List innerhalb eines div Tags
+            <ul>
+                <li>Listeneintrag 1</li>
+                <li>Listeneintrag 2</li>
+                <li>Listeneintrag 3</li>
+            </ul>
+        </div>
+
+        <ul>
+            <li>Liste</li>
+            <li>ausserhalb</li>
+            <li>eines div-Tags</li>
+        </ul>
+
+        <ul class="long">
+            <li>Eine</li>
+            <li>lange</li>
+            <li>Liste</li>
+            <li>mit</li>
+            <li>vielen</li>
+            <li>Punkten</li>
+        </ul>
+
+        <form>
+            <input type="text" id="name" value="Input mit id 'name'" />
+            <input type="text" value="Normales Textfeld" />
+            <input type="number" value="1234" />
+        </form>
+
+    </body>
+
+    <style type="text/css">
+        h1 {
+            color: red;
+        }
+        .lead {
+            color: blue;
+        }
+        .text {
+            border: 1px yellow solid;
+        }
+        div ul li {
+            text-decoration: underline;
+        }
+        li:last-child {
+            font-weight: bold;
+        }
+        body > ul:first-of-type {
+            color: green;
+        }
+        .long li:nth-child(1n) {
+            color: blue;
+        }
+        .long li:nth-child(2n) {
+            color: red;
+        }
+        #name {
+            border: blue 1px solid;
+        }
+        input[type=text] {
+            border: orange 1px solid;
+        }
+        input[type=number] {
+            border: green 1px solid;
+        }
+    </style>
+</html>
