@@ -1,0 +1,50 @@
+<html>
+    <body>
+        <button class="continue" disabled>Fortfahren</button>
+        <button class="back" disabled>Zurück</button>
+        <button class="abort" disabled style="background-color: red; color: black">Abbrechen</button>
+        <button class="restart" disabled>Neu Starten</button>
+        
+        <style type="text/css">
+            button {
+                display: block;
+                visibility: visible;
+                border-radius: 4px;
+                margin-bottom: 10px;
+                padding: 2px 10px;
+            }
+
+            button:hover {
+                border-color: red;
+            }
+
+            .continue {
+                background-color: green;
+            }
+        
+            .back {
+                background-color: orange;
+            }
+        
+            .abort {
+                background-color: red;
+            }
+        
+            .restart {
+                background-color: blue;
+            }
+
+            .dangerous {
+                background-color: orange;
+            }
+
+            button:disabled {
+                background-color: gray;
+            }
+
+            .hide {
+                display: none;
+            }
+        </style>
+    </body>
+</html>
