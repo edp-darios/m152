@@ -1,0 +1,31 @@
+.person {
+  background-color: lightgrey;
+  box-shadow: #777279 1px 1px;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  transition: transform 2s;
+}
+.person:hover {
+  transform: scale(1.1);
+}
+.person button {
+  background-color: lime;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.person button:hover {
+  background-color: darkgreen;
+  transition: all 2s;
+}
+.person .title {
+  margin: 20px 0px 10px 0px;
+  font-weight: bold;
+}
+.person img {
+  border-radius: 50%;
+}/*# sourceMappingURL=scss.css.map */
