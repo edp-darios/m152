@@ -1,0 +1,26 @@
+.person {
+    background-color: lightgrey;
+    box-shadow: #777279 1px 1px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+
+    &__button {
+        background-color: lime;
+        border: none;
+        padding: 5px;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    
+    &__title {
+        margin: 20px 0px 10px 0px;
+        font-weight: bold;
+    }
+    
+    &__img {
+        border-radius: 50%
+    }
+}
