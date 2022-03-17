@@ -1,0 +1,61 @@
+
+.personlist {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.person {
+    width: 350px;
+
+    &__inner {
+        margin: 5px;
+        padding: 15px;
+        display: flex;
+        background-color: #eee;
+    }
+
+    &__image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    &__textcontainer {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    &__button {
+        background-color: goldenrod;
+        align-self: baseline;
+        padding: 5px 20px;
+        margin: 0 auto;
+        border: 0;
+        cursor: pointer;
+
+        &:hover {
+            background-color: gold;
+        }
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 600px) {
+    .person {
+        width: 100%;
+
+    }
+}
