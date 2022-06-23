@@ -3,23 +3,25 @@
     <div class="row">
 
       <div class="col-12">
-        <h1>Noten-Verwaltung</h1>
+        <h1>Vue-Projekt | Noten-Verwaltung</h1>
         <p>von Dario Stübi</p>
         <hr>
+        <h3>Verwaltung</h3>
+        <br>
       </div>
 
       <div class="col-md-6">
         <div class="form-group w-100">
-          <label for="addSubject">Add Subject</label>
-          <input v-model="newSubject" name="addSubject" type="text" placeholder="Subject" aria-label="New Subject" aria-describedby="add-button" class="form-control">
+          <label for="addSubject" class="font-weight-bold">Add Subject</label>
+          <input v-model="newSubject" id="addSubject" name="addSubject" type="text" placeholder="Subject" aria-label="New Subject" aria-describedby="add-button" class="form-control">
           <button @click="addSubject(this.newSubject)" class="btn btn-primary mt-2">Add Subject</button>
         </div>
       </div>
 
       <div class="col-md-6">
         <div class="form-group w-100">
-          <label for="addGrade">Add Grade</label>
-          <select name="addGrade" v-model="selectSubject" class="form-control">
+          <label for="addGrade" class="font-weight-bold">Add Grade</label>
+          <select name="addGrade" id="addGrade" v-model="selectSubject" class="form-control">
             <option value="disabled" disabled>Choose a Subject</option>
             <option v-for="subject in subjects" :value="subject.subject">{{ subject.subject }}</option>
           </select>
@@ -30,7 +32,8 @@
 
       <div class="col-12">
         <hr>
-        <h3>Gesammtdurchschnitt: Ø {{ Math.round(parseFloat(overallAVG) * 2) / 2 }}</h3>
+        <h3>Noten</h3>
+        <h5>Gesammtdurchschnitt: Ø {{ Math.round(parseFloat(overallAVG) * 2) / 2 }}</h5>
         <br>
       </div>
 
